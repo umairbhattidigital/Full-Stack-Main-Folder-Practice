@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Survey</title>
+</head>
+
+<body>
+
+    <!-- 04-06-2026 -->
+
+    <!-- heading  -->
+    <h1>Student Feedback Survey</h1>
+
+    <!-- Image source -->
+    <img src="https://media.istockphoto.com/id/2251260765/photo/studying-with-my-friends.jpg?s=612x612&w=0&k=20&c=Dsj9QuR7VHtysoKqO8bzmhQK-ERLjVj9ZxqRl9D-Ixs="
+        alt="Three students working together with laptops at a table" height="350px" width="500px">
+
+    <p>Thank you for taking the time to complete this survey. Your feedback helps us improve the learning experience for
+        future students.</p>
+    <p>Learn more about web development at <a href="https://www.freecodecamp.org" target="_blank">FreeCodeCamp.</a></p>
+
+    <hr>
+
+    <br> <br>
+
+
+
+    <!-- form start  -->
+
+    <form>
+
+
+        <label for="Name">Full Name</label> <br>
+        <input type="text" id="Name" placeholder="Enter your full name" required>
+        <br>
+        <br>
+
+        <label for="Email">Email</label> <br>
+        <input type="Email" id="Email" placeholder="Enter your email" required>
+
+        <br>
+        <br>
+
+        <label for="age">Age:</label><br>
+        <input type="number" id="age" name="age" placeholder="Enter yor age" required>
+
+        <br>
+        <br>
+
+        <label for="education-level">Current Education Level:</label><br>
+        <select id="education-level" name="educationLevel">
+            <option value="" disabled selected>Select an option</option>
+            <option value="high-school">SSC</option>
+            <option value="undergraduate">HSC</option>
+            <option value="graduate">Graduate</option>
+            <option value="self-taught">Post Graduate</option>
+        </select>
+
+        <br>
+        <br>
+        <br>
+
+        <hr>
+        <br>
+        <br>
+
+        <h3>FIELD OPTION USING RADIO</h3> <br> <br>
+
+        <fieldset>
+            <legend>How satisfied are you with the course?</legend>
+            <label>
+                <input type="radio" name="satisfaction" value="excellent"> Excellent
+            </label><br>
+            <label>
+                <input type="radio" name="satisfaction" value="good"> Good
+            </label><br>
+            <label>
+                <input type="radio" name="satisfaction" value="average"> Average
+            </label>
+        </fieldset>
+
+        <br><br>
+
+
+        <fieldset>
+            <legend>Which topics are you interested in?</legend>
+            <label>
+                <input type="checkbox" name="topics" value="html"> HTML
+            </label><br>
+            <label>
+                <input type="checkbox" name="topics" value="css"> CSS
+            </label><br>
+            <label>
+                <input type="checkbox" name="topics" value="javascript"> JavaScript
+            </label><br>
+            <label>
+                <input type="checkbox" name="topics" value="react"> React
+            </label>
+        </fieldset>
+
+
+        <br>
+        <br>
+
+        <label for="comments">Additional Comments:</label><br>
+        <textarea id="comments" name="comments" rows="5" cols="40" placeholder="Share your thoughts here..."></textarea>
+
+        <br>
+        <br>
+        <br>
+
+        <button type="submit">Submit Survey</button>
+        <br>
+        <br>
+        <br>
+
+
+    </form>
+
+    <!-- form end -->
+
+    <!-- horizontal row  -->
+    <hr>
+
+    <footer>
+        <p>&copy; 2026 Student Feedback Survey | Created as an HTML project assignment.</p>
+
+    </footer>
+
+
+
+
+
+</body>
+
+</html>
