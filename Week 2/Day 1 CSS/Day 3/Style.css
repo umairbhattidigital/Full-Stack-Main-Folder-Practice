@@ -1,0 +1,66 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+
+section {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#hero1 {
+    width: 80%;
+    margin: auto;
+    position: relative;
+}
+
+h1 {
+    text-align: center;
+    font-size: 80px;
+    font-family: "Fraunces", serif;;
+    font-weight: 400;
+
+}
+
+h3{text-align: center;
+    font-size: 40px;
+    font-family: "Fraunces", serif;;
+    font-weight: 400;
+}
+
+
+img {
+    position: absolute;
+    border-radius: 1rem;
+    z-index: -1;
+}
+
+#image1 {
+    left: 0;
+    width: 500px;
+    height: 710px;
+    align-content: center;
+}
+
+#image2 {
+    right: 15%;
+    top: 14%;
+    width: 400px;
+}
+
+#image3 {
+    right: 0;
+    bottom: 10%;
+    width: 350px;
+}
+
