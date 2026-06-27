@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Image Gallery</title>
+    <style>
+        /* Base Reset & Styling */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f7f6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        /* Gallery Grid Layout */
+        .gallery-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            max-width: 1000px;
+            width: 100%;
+        }
+
+        /* Image Wrapper (Prevents zoomed images from spilling out) */
+        .gallery-item {
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: #ddd;
+            aspect-ratio: 4 / 3; /* Keeps all images uniformly sized */
+        }
+
+        /* Base Image Styling */
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            
+            /* Smooth Transition Setup */
+            transition: transform 0.4s ease-in-out;
+        }
+
+        /* Interactive Hover Effects */
+        .gallery-item:hover img {
+            /* Combines scale and slight rotation */
+            transform: scale(1.15) rotate(3deg);
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="gallery-container">
+        <div class="gallery-item">
+            <img src="https://picsum.photos/id/1015/600/450" alt="Mountains">
+        </div>
+        <div class="gallery-item">
+            <img src="https://picsum.photos/id/1016/600/450" alt="Canyon">
+        </div>
+        <div class="gallery-item">
+            <img src="https://picsum.photos/id/16/600/450" alt="Ocean Pier">
+        </div>
+        <div class="gallery-item">
+            <img src="https://picsum.photos/id/1025/600/450" alt="Forest Park">
+        </div>
+        <div class="gallery-item">
+            <img src="https://picsum.photos/id/1043/600/450" alt="Venice Rails">
+        </div>
+        <div class="gallery-item">
+            <img src="https://picsum.photos/id/1050/600/450" alt="Hillside View">
+        </div>
+    </div>
+
+</body>
+</html>

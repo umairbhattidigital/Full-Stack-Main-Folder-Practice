@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transition and Transform Button</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f9;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* The Button Styling */
+        .interactive-btn {
+            /* Default Styling */
+            background-color: #007bff; /* Blue background */
+            color: #ffffff;
+            padding: 15px 30px;
+            font-size: 16px;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+            /* Smoothly transitions both the background-color and the transform scale over 0.3 seconds */
+            transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        /* Hover Effects */
+        .interactive-btn:hover {
+            background-color: #0056b3; /* Darker blue on hover */
+            transform: scale(1.08);     /* Slightly zooms in (8% larger) */
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Enhances shadow for a depth effect */
+        }
+
+        /* Active/Click State (Optional but nice for UX) */
+        .interactive-btn:active {
+            transform: scale(0.98); /* Slightly shrinks when clicked */
+        }
+    </style>
+</head>
+<body>
+
+    <button class="interactive-btn">Hover Over Me</button>
+
+</body>
+</html>
